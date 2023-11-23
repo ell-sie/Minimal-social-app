@@ -55,7 +55,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyA1-uJalz6xcQP-ORnSgTkd3Dvl2FLadCM',
-    appId: '1:631124301692:android:df41740a3a578dfbe536f9',
+    appId: '1:631124301692:android:75abbde93cdf0c53e536f9',
     messagingSenderId: '631124301692',
     projectId: 'minimal-social-app-b73dc',
     storageBucket: 'minimal-social-app-b73dc.appspot.com',
@@ -63,19 +63,19 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyA-KnIU_rfchfC99zZzJw_cdwvDSVl5PQA',
-    appId: '1:631124301692:ios:8d5cbe45467e8b55e536f9',
+    appId: '1:631124301692:ios:cf786dfbcad13b27e536f9',
     messagingSenderId: '631124301692',
     projectId: 'minimal-social-app-b73dc',
     storageBucket: 'minimal-social-app-b73dc.appspot.com',
-    iosBundleId: 'com.example.flutterApplication',
+    iosBundleId: 'com.example.socialApp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyA-KnIU_rfchfC99zZzJw_cdwvDSVl5PQA',
-    appId: '1:631124301692:ios:6bc72918be33f495e536f9',
+    appId: '1:631124301692:ios:738c6420930b1d48e536f9',
     messagingSenderId: '631124301692',
     projectId: 'minimal-social-app-b73dc',
     storageBucket: 'minimal-social-app-b73dc.appspot.com',
-    iosBundleId: 'com.example.flutterApplication.RunnerTests',
+    iosBundleId: 'com.example.socialApp.RunnerTests',
   );
 }

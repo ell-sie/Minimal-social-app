@@ -72,7 +72,7 @@ class _LoginPageState extends State<LoginPage> {
 
                   // app name
                   const Text(
-                    "M I N I M A L",
+                    "S O C I A L",
                     style: TextStyle(fontSize: 20),
                   ),
 

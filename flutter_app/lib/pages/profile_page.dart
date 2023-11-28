@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/components/my_back_button.dart';
 
 class ProfilePage extends StatelessWidget {
   ProfilePage({super.key});
@@ -37,14 +38,28 @@ class ProfilePage extends StatelessWidget {
             }
 
             //data recieved
-            else if (snapshot.hasData) {
+            else if (snapshot.hasData && snapshot.data!.exists) {
               // extract data
               Map<String, dynamic>? user = snapshot.data!.data();
 
               return Center(
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    // back button
+                    const Padding(
+                      padding: EdgeInsets.only(
+                        top:50.0,
+                        left: 25,
+                        ),
+                      child: Row(
+                        children: [
+                          MyBackButton(),
+                        ],
+                      ),
+                    ),
+
+                    const SizedBox(height: 25),
+
                     // profile pic
                     Container(
                       decoration: BoxDecoration(
@@ -58,7 +73,7 @@ class ProfilePage extends StatelessWidget {
                       ),
                     ),
 
-                    const SizedBox(height: 25,),
+                    const SizedBox(height: 25),
 
                     // username
                     Text(

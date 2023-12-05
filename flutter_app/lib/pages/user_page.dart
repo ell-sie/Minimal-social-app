@@ -44,7 +44,9 @@ class UserPage extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      MyBackButton(),
+                      MyBackButton(
+                        key: Key('backButton'),
+                      ),
                     ],
                   ),
                 ),

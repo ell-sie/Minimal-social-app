@@ -50,6 +50,7 @@ class HomePage extends StatelessWidget {
                   // textfield
                   Expanded(
                     child: MyTextField(
+                      key: const Key('textfield'),
                       hintText: "Say something", 
                       obscureText: false, 
                       controller: newPostController),
@@ -57,6 +58,7 @@ class HomePage extends StatelessWidget {
                     
                   // post button
                   PostButton(
+                    key: const Key('postbutton'),
                     onTap: postMessage,
                     )
                 ],
@@ -69,7 +71,7 @@ class HomePage extends StatelessWidget {
               builder: (context, snapshot) {
                 // show loading circle
                 if (snapshot.connectionState == ConnectionState.waiting) {
-                  return Center(
+                  return const Center(
                     child: CircularProgressIndicator(),
                   );
                 }
@@ -101,7 +103,7 @@ class HomePage extends StatelessWidget {
                       // return as a a list tile
                       return MyListTile(
                         title: message, 
-                        subTitle: userEmail
+                        subTitle: userEmail,
                         );
                     }),
                 );

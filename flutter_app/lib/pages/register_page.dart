@@ -12,6 +12,8 @@ class RegisterPage extends StatefulWidget {
 
   @override
   State<RegisterPage> createState() => _RegisterPageState();
+
+  void registerUser() {}
 }
 
 class _RegisterPageState extends State<RegisterPage>{
@@ -85,7 +87,7 @@ class _RegisterPageState extends State<RegisterPage>{
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.background,
-      body: Center(
+      body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(25.0),
           child: Column(
